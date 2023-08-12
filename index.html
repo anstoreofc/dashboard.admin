@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://i.ibb.co/ZG0LTgD/Administrator-management.png" type="image/x-icon">
+  <title>Laporan</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for responsiveness */
+    body {
+      padding-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Dashboard Admin</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2>DATA PENJUALAN</h2>
+    <br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>LAYANAN</th>
+          <th>MODAL</th>
+          <th>JUAL</th>
+          <th>KEUNTUNGAN</th>
+          <th>TANGGAL</th>
+          <th>AKSI</th>
+        </tr>
+      </thead>
+      <tbody id="barangTableBody">
+        <!-- Data barang akan ditampilkan di sini -->
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <div class="mt-4">
+      <h2>TAMBAH DATA</h2>
+      <br>
+      <form id="addBarangForm">
+        <div class="form-group">
+          <label for="namaBarang">Nama Layanan</label>
+          <input type="text" class="form-control" id="namaBarang" required>
+        </div>
+        <div class="form-group">
+          <label for="hargaBeli">Harga Beli</label>
+          <input type="number" class="form-control" id="hargaBeli" required>
+        </div>
+        <div class="form-group">
+          <label for="hargaJual">Harga Jual</label>
+          <input type="number" class="form-control" id="hargaJual" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
